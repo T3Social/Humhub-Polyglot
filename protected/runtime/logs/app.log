@@ -1,0 +1,918 @@
+2018-02-28 19:51:06 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'humhub' in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=loca...', '', '', NULL)
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('user')
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('user')
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#11 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all(NULL)
+#12 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\libs\BaseSettingsManager.php(169): yii\db\ActiveQuery->all()
+#13 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\libs\BaseSettingsManager.php(49): humhub\libs\BaseSettingsManager->loadValues()
+#14 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Object.php(107): humhub\libs\BaseSettingsManager->init()
+#15 [internal function]: yii\base\Object->__construct(Array)
+#16 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#17 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('humhub\\componen...', Array, Array)
+#18 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\BaseYii.php(348): yii\di\Container->get('humhub\\componen...', Array, Array)
+#19 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#20 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\ServiceLocator.php(73): yii\di\ServiceLocator->get('settings')
+#21 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\user\components\User.php(182): yii\di\ServiceLocator->__get('settings')
+#22 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\widgets\TopMenu.php(41): humhub\modules\user\components\User::isGuestAccessEnabled()
+#23 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Object.php(107): humhub\widgets\TopMenu->init()
+#24 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\widgets\BaseMenu.php(316): yii\base\Object->__construct()
+#25 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\Controller.php(284): humhub\widgets\BaseMenu::setViewState()
+#26 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\Controller.php(204): humhub\components\Controller->setJsViewStatus()
+#27 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(154): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#28 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('go', Array)
+#29 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('installer/index...', Array)
+#30 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#31 C:\xampp\htdocs\Humhub-Polyglot\index.php(25): yii\base\Application->run()
+#32 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'humhub' in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('user')
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('user')
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#9 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all(NULL)
+#10 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\libs\BaseSettingsManager.php(169): yii\db\ActiveQuery->all()
+#11 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\libs\BaseSettingsManager.php(49): humhub\libs\BaseSettingsManager->loadValues()
+#12 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Object.php(107): humhub\libs\BaseSettingsManager->init()
+#13 [internal function]: yii\base\Object->__construct(Array)
+#14 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('humhub\\componen...', Array, Array)
+#16 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\BaseYii.php(348): yii\di\Container->get('humhub\\componen...', Array, Array)
+#17 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#18 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\ServiceLocator.php(73): yii\di\ServiceLocator->get('settings')
+#19 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\user\components\User.php(182): yii\di\ServiceLocator->__get('settings')
+#20 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\widgets\TopMenu.php(41): humhub\modules\user\components\User::isGuestAccessEnabled()
+#21 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Object.php(107): humhub\widgets\TopMenu->init()
+#22 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\widgets\BaseMenu.php(316): yii\base\Object->__construct()
+#23 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\Controller.php(284): humhub\widgets\BaseMenu::setViewState()
+#24 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\Controller.php(204): humhub\components\Controller->setJsViewStatus()
+#25 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(154): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#26 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('go', Array)
+#27 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('installer/index...', Array)
+#28 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#29 C:\xampp\htdocs\Humhub-Polyglot\index.php(25): yii\base\Application->run()
+#30 {main}
+Additional Information:
+
+2018-02-28 19:51:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/index/go'
+    '_pjax' => '#layout-content'
+    '_' => '1519843863004'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => '5JTGO-l95CJ9RBDO5Gsz7Pe7MCndan4qO26EOzmN-ERAlPaAeqn5ysatkIq6IcB1HmAwuzNJ_TwPwyKamSNXRQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#layout-content'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '50729'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Findex%2Fgo&_pjax=%23layout-content&_=1519843863004'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Findex%2Fgo&_pjax=%23layout-content&_=1519843863004'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519843865.937
+    'REQUEST_TIME' => 1519843865
+]
+2018-02-28 19:51:06 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\log\DbTarget: Exception (Database Exception) 'yii\db\Exception' with message 'SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'humhub'' 
+
+in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php:584
+
+Stack trace:
+#0 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('yii\\db\\Exceptio...')
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('yii\\db\\Exceptio...')
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\log\DbTarget.php(89): yii\db\Command->execute()
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\log\Target.php(124): yii\log\DbTarget->export()
+#9 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\log\Target->collect(Array, true)
+#10 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#11 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\ErrorHandler.php(113): yii\log\Logger->flush(true)
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#13 {main}
+2018-02-28 19:51:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/index/go'
+    '_pjax' => '#layout-content'
+    '_' => '1519843863004'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => '5JTGO-l95CJ9RBDO5Gsz7Pe7MCndan4qO26EOzmN-ERAlPaAeqn5ysatkIq6IcB1HmAwuzNJ_TwPwyKamSNXRQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#layout-content'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '50729'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Findex%2Fgo&_pjax=%23layout-content&_=1519843863004'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Findex%2Fgo&_pjax=%23layout-content&_=1519843863004'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519843865.937
+    'REQUEST_TIME' => 1519843865
+]
+2018-02-28 19:51:10 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'humhub' in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=loca...', '', '', NULL)
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('user')
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('user')
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#11 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all(NULL)
+#12 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\libs\BaseSettingsManager.php(169): yii\db\ActiveQuery->all()
+#13 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\libs\BaseSettingsManager.php(49): humhub\libs\BaseSettingsManager->loadValues()
+#14 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Object.php(107): humhub\libs\BaseSettingsManager->init()
+#15 [internal function]: yii\base\Object->__construct(Array)
+#16 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#17 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('humhub\\componen...', Array, Array)
+#18 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\BaseYii.php(348): yii\di\Container->get('humhub\\componen...', Array, Array)
+#19 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#20 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\ServiceLocator.php(73): yii\di\ServiceLocator->get('settings')
+#21 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\user\components\User.php(182): yii\di\ServiceLocator->__get('settings')
+#22 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\widgets\TopMenu.php(41): humhub\modules\user\components\User::isGuestAccessEnabled()
+#23 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Object.php(107): humhub\widgets\TopMenu->init()
+#24 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\widgets\BaseMenu.php(316): yii\base\Object->__construct()
+#25 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\Controller.php(284): humhub\widgets\BaseMenu::setViewState()
+#26 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\Controller.php(204): humhub\components\Controller->setJsViewStatus()
+#27 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(154): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#28 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('database', Array)
+#29 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('installer/setup...', Array)
+#30 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#31 C:\xampp\htdocs\Humhub-Polyglot\index.php(25): yii\base\Application->run()
+#32 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'humhub' in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('user')
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('user')
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#9 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all(NULL)
+#10 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\libs\BaseSettingsManager.php(169): yii\db\ActiveQuery->all()
+#11 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\libs\BaseSettingsManager.php(49): humhub\libs\BaseSettingsManager->loadValues()
+#12 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Object.php(107): humhub\libs\BaseSettingsManager->init()
+#13 [internal function]: yii\base\Object->__construct(Array)
+#14 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('humhub\\componen...', Array, Array)
+#16 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\BaseYii.php(348): yii\di\Container->get('humhub\\componen...', Array, Array)
+#17 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#18 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\di\ServiceLocator.php(73): yii\di\ServiceLocator->get('settings')
+#19 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\user\components\User.php(182): yii\di\ServiceLocator->__get('settings')
+#20 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\widgets\TopMenu.php(41): humhub\modules\user\components\User::isGuestAccessEnabled()
+#21 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Object.php(107): humhub\widgets\TopMenu->init()
+#22 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\widgets\BaseMenu.php(316): yii\base\Object->__construct()
+#23 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\Controller.php(284): humhub\widgets\BaseMenu::setViewState()
+#24 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\Controller.php(204): humhub\components\Controller->setJsViewStatus()
+#25 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(154): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#26 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('database', Array)
+#27 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('installer/setup...', Array)
+#28 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#29 C:\xampp\htdocs\Humhub-Polyglot\index.php(25): yii\base\Application->run()
+#30 {main}
+Additional Information:
+
+2018-02-28 19:51:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/setup/database'
+    '_pjax' => '#layout-content'
+    '_' => '1519843867813'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => '8SitDkl4rVyDrlthTN4Na0_6rzbYHpAFUauHjBoZNNFVKJ212qywtDhH2yUSlP7ypiGvpDY9ExNlBiEtureb0A=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#layout-content'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Fsetup%2Fprerequisites'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '50733'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Fsetup%2Fdatabase&_pjax=%23layout-content&_=1519843867813'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Fsetup%2Fdatabase&_pjax=%23layout-content&_=1519843867813'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519843870.509
+    'REQUEST_TIME' => 1519843870
+]
+2018-02-28 19:51:10 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\log\DbTarget: Exception (Database Exception) 'yii\db\Exception' with message 'SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'humhub'' 
+
+in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php:584
+
+Stack trace:
+#0 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('yii\\db\\Exceptio...')
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('yii\\db\\Exceptio...')
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\log\DbTarget.php(89): yii\db\Command->execute()
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\log\Target.php(124): yii\log\DbTarget->export()
+#9 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\log\Target->collect(Array, true)
+#10 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#11 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\ErrorHandler.php(113): yii\log\Logger->flush(true)
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#13 {main}
+2018-02-28 19:51:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/setup/database'
+    '_pjax' => '#layout-content'
+    '_' => '1519843867813'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => '8SitDkl4rVyDrlthTN4Na0_6rzbYHpAFUauHjBoZNNFVKJ212qywtDhH2yUSlP7ypiGvpDY9ExNlBiEtureb0A=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#layout-content'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Fsetup%2Fprerequisites'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '50733'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Fsetup%2Fdatabase&_pjax=%23layout-content&_=1519843867813'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Fsetup%2Fdatabase&_pjax=%23layout-content&_=1519843867813'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519843870.509
+    'REQUEST_TIME' => 1519843870
+]
+2018-02-28 19:54:45 [::1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php:843
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-02-28 19:54:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/config/index'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Fsetup%2Fdatabase'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '50737'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Fconfig%2Findex'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Findex'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519844055.16
+    'REQUEST_TIME' => 1519844055
+]
+2018-02-28 19:59:11 [::1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\admin\libs\OnlineModuleManager.php:95
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-02-28 19:58:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/config/modules'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '237'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:90'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '51032'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=installer%2Fconfig%2Fmodules'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519844321.371
+    'REQUEST_TIME' => 1519844321
+]
+2018-02-28 20:00:13 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: ZipArchive::extractTo(): Permission denied in C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\admin\libs\OnlineModuleManager.php:94
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'ZipArchive::ext...', 'C:\\xampp\\htdocs...', 94, Array)
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\admin\libs\OnlineModuleManager.php(94): ZipArchive->extractTo('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\installer\controllers\ConfigController.php(195): humhub\modules\admin\libs\OnlineModuleManager->install('birthday')
+#3 [internal function]: humhub\modules\installer\controllers\ConfigController->actionModules()
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('modules', Array)
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('installer/confi...', Array)
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#9 C:\xampp\htdocs\Humhub-Polyglot\index.php(25): yii\base\Application->run()
+#10 {main}
+2018-02-28 20:00:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/config/modules'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '237'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:90'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '51046'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=installer%2Fconfig%2Fmodules'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519844405.167
+    'REQUEST_TIME' => 1519844405
+]
+2018-02-28 20:09:33 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: ZipArchive::extractTo(): Permission denied in C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\admin\libs\OnlineModuleManager.php:94
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'ZipArchive::ext...', 'C:\\xampp\\htdocs...', 94, Array)
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\admin\libs\OnlineModuleManager.php(94): ZipArchive->extractTo('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\installer\controllers\ConfigController.php(195): humhub\modules\admin\libs\OnlineModuleManager->install('calendar')
+#3 [internal function]: humhub\modules\installer\controllers\ConfigController->actionModules()
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('modules', Array)
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('installer/confi...', Array)
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#9 C:\xampp\htdocs\Humhub-Polyglot\index.php(25): yii\base\Application->run()
+#10 {main}
+2018-02-28 20:09:12 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/config/modules'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '237'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:90'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '51262'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=installer%2Fconfig%2Fmodules'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519844952.129
+    'REQUEST_TIME' => 1519844952
+]
+2018-02-28 20:13:07 [::1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php:843
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-02-28 20:12:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/config/modules'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '151'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:90'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '51349'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=installer%2Fconfig%2Fmodules'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519845156.895
+    'REQUEST_TIME' => 1519845156
+]
+2018-02-28 20:13:40 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: ZipArchive::extractTo(): Permission denied in C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\admin\libs\OnlineModuleManager.php:94
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'ZipArchive::ext...', 'C:\\xampp\\htdocs...', 94, Array)
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\admin\libs\OnlineModuleManager.php(94): ZipArchive->extractTo('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\installer\controllers\ConfigController.php(195): humhub\modules\admin\libs\OnlineModuleManager->install('mail')
+#3 [internal function]: humhub\modules\installer\controllers\ConfigController->actionModules()
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('modules', Array)
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('installer/confi...', Array)
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#9 C:\xampp\htdocs\Humhub-Polyglot\index.php(25): yii\base\Application->run()
+#10 {main}
+2018-02-28 20:13:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/config/modules'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '124'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:90'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '51366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=installer%2Fconfig%2Fmodules'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519845207.834
+    'REQUEST_TIME' => 1519845207
+]
+2018-02-28 20:14:35 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: ZipArchive::extractTo(): Permission denied in C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\admin\libs\OnlineModuleManager.php:94
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'ZipArchive::ext...', 'C:\\xampp\\htdocs...', 94, Array)
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\admin\libs\OnlineModuleManager.php(94): ZipArchive->extractTo('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\installer\controllers\ConfigController.php(195): humhub\modules\admin\libs\OnlineModuleManager->install('birthday')
+#3 [internal function]: humhub\modules\installer\controllers\ConfigController->actionModules()
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('modules', Array)
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('installer/confi...', Array)
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#9 C:\xampp\htdocs\Humhub-Polyglot\index.php(25): yii\base\Application->run()
+#10 {main}
+2018-02-28 20:14:29 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/config/modules'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '155'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:90'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '51384'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=installer%2Fconfig%2Fmodules'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fmodules'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519845269.095
+    'REQUEST_TIME' => 1519845269
+]
+2018-02-28 20:15:47 [::1][1][fu79clkb0r0t42a70cbjn938hc][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: humhub\modules\polls\models\Poll::anonymous in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('anonymous')
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\content\components\ContentActiveRecord.php(159): yii\db\BaseActiveRecord->__get('anonymous')
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\validators\Validator.php(263): humhub\modules\content\components\ContentActiveRecord->__get('anonymous')
+#3 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(humhub\modules\polls\models\Poll), Array)
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\ActiveRecord.php(455): yii\base\Model->validate(Array)
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(643): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\modules\polls\Events.php(144): yii\db\BaseActiveRecord->save()
+#7 [internal function]: humhub\modules\polls\Events::onSampleDataInstall(Object(yii\base\Event))
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Event.php(220): call_user_func(Array, Object(yii\base\Event))
+#9 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Component.php(553): yii\base\Event::trigger('humhub\\modules\\...', 'install_sample_...', Object(yii\base\Event))
+#10 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\installer\controllers\ConfigController.php(346): yii\base\Component->trigger('install_sample_...')
+#11 [internal function]: humhub\modules\installer\controllers\ConfigController->actionSampleData()
+#12 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('sample-data', Array)
+#15 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('installer/confi...', Array)
+#16 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#17 C:\xampp\htdocs\Humhub-Polyglot\index.php(25): yii\base\Application->run()
+#18 {main}
+2018-02-28 20:15:39 [::1][1][fu79clkb0r0t42a70cbjn938hc][info][application] $_GET = [
+    'r' => 'installer/config/sample-data'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '164'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:90'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fsample-data'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=0ba97ffe67d5449b253812c8ede52c40ca532282ca2d657a1a85b092db2d7d74a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%A4%000%BB%93%D4%1D%E8%BB%E9%80D%5EJ%F3%99%E9%DB%00%92%EE%23%83%164%AD%A6%A1%A0%AE%AF%01%22%3B%7D; PHPSESSID=dj6mr3hm9asuf59qonvu23m9n2'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '51424'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=installer%2Fconfig%2Fsample-data'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=installer%2Fconfig%2Fsample-data'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1519845339.767
+    'REQUEST_TIME' => 1519845339
+]
