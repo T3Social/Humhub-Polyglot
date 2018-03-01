@@ -44,12 +44,12 @@
     ),
     'formatter' => 
     array (
-      'defaultTimeZone' => 'Europe/Berlin',
+      'defaultTimeZone' => 'Asia/Kolkata',
     ),
     'formatterApp' => 
     array (
-      'defaultTimeZone' => 'Europe/Berlin',
-      'timeZone' => 'Europe/Berlin',
+      'defaultTimeZone' => 'Asia/Kolkata',
+      'timeZone' => 'Asia/Kolkata',
     ),
   ),
   'params' => 
@@ -62,12 +62,12 @@
         'installer_database' => 'humhub',
       ),
     ),
-    'config_created_at' => 1519845728,
+    'config_created_at' => 1519848457,
     'horImageScrollOnMobile' => '1',
     'databaseInstalled' => true,
     'installed' => true,
   ),
   'name' => 'JConnect',
-  'language' => 'en-US',
-  'timeZone' => 'Europe/Berlin',
+  'language' => 'en',
+  'timeZone' => 'Asia/Kolkata',
 ); ?>
