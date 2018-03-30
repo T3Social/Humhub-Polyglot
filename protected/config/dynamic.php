@@ -11,7 +11,7 @@
     ),
       'mongodb' => [
             'class' => '\yii\mongodb\Connection',
-            'dsn' => 'mongodb://@localhost:27017/mydatabase',
+            'dsn' => 'mongodb://@localhost:27017/humhub',
             'options' => [
                 "username" => "root",
                 "password" => ""
