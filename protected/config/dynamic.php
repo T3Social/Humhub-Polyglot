@@ -6,7 +6,7 @@
       'class' => 'yii\\db\\Connection',
       'dsn' => 'mysql:host=localhost;dbname=humhub',
       'username' => 'root',
-      'password' => '12345qwert',
+      'password' => '',
       'charset' => 'utf8',
     ),
       'mongodb' => [
