@@ -1,4 +1,4 @@
-a:2:{i:0;s:1476:"
+a:2:{i:0;s:1475:"
 <a href="/Humhub-Polyglot/index.php?r=activity%2Flink&id=3">
     <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="4">
         <div class="media">
@@ -16,7 +16,7 @@ a:2:{i:0;s:1476:"
                 <strong>David Roberts</strong> joined the space <strong>Welcome Space</strong><br>
 
                 <!-- show time -->
-                <span class="time" title="2018-03-01T00:45:41+05:30">Mar 1, 2018 - 12:45 AM</span>            </div>
+                <span class="time"><span title="Mar 1, 2018 - 12:45 AM">Mar 1, 2018</span></span>            </div>
         </div>
     </li>
 </a>

@@ -916,3 +916,839 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1519845339.767
     'REQUEST_TIME' => 1519845339
 ]
+2018-03-03 23:31:06 [::1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\ViewContextInterface.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-03 23:30:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'dashboard/dashboard'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=qpmjl82af4bvhrp9dtifkas3dh'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '50741'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520100029.678
+    'REQUEST_TIME' => 1520100029
+]
+2018-03-06 01:47:25 [::1][1][1jeu8vqokt49huptu0pndj0p4e][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\assets\AppAsset.php:20
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-06 01:46:57 [::1][1][1jeu8vqokt49huptu0pndj0p4e][info][application] $_GET = [
+    'r' => 'dashboard/dashboard'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=28hdntuhg1o0gsp78kpghnforv'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '59864'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520281013.993
+    'REQUEST_TIME' => 1520281013
+]
+2018-03-07 22:42:25 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: Login Required in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\User.php:427
+Stack trace:
+#0 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\behaviors\AccessControl.php(216): yii\web\User->loginRequired()
+#1 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\behaviors\AccessControl.php(146): humhub\components\behaviors\AccessControl->loginRequired()
+#2 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\ActionFilter.php(75): humhub\components\behaviors\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\components\Controller.php(190): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Controller.php(154): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('get-new-message...', Array)
+#10 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('mail/mail/get-n...', Array)
+#11 C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 C:\xampp\htdocs\Humhub-Polyglot\index.php(25): yii\base\Application->run()
+#13 {main}
+2018-03-07 22:42:25 [::1][-][-][info][application] $_GET = [
+    'r' => 'mail/mail/get-new-message-count-json'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '57649'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mail%2Fmail%2Fget-new-message-count-json'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=mail%2Fmail%2Fget-new-message-count-json'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520442745.063
+    'REQUEST_TIME' => 1520442745
+]
+2018-03-08 10:23:06 [::1][1][muotvpq6jl4v6oa33r4ron9ooi][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php:843
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-08 10:22:37 [::1][1][muotvpq6jl4v6oa33r4ron9ooi][info][application] $_GET = [
+    'r' => 'mail/mail/get-new-message-count-json'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=osubj8116klp8co5oake3qltse'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '49483'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mail%2Fmail%2Fget-new-message-count-json'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=mail%2Fmail%2Fget-new-message-count-json'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520484752.013
+    'REQUEST_TIME' => 1520484752
+]
+2018-03-10 11:48:29 [::1][-][0hjrmp31lqb5oqv65jk7nkiumf][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-10 11:47:53 [::1][-][0hjrmp31lqb5oqv65jk7nkiumf][info][application] $_GET = [
+    'r' => 'mail/mail/get-new-message-count-json'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=0hjrmp31lqb5oqv65jk7nkiumf'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '59926'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mail%2Fmail%2Fget-new-message-count-json'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=mail%2Fmail%2Fget-new-message-count-json'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520662673.267
+    'REQUEST_TIME' => 1520662673
+]
+2018-03-13 02:46:42 [::1][1][k8m5robq1v1ro1gobefcqhj19l][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php:843
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-13 02:46:09 [::1][1][k8m5robq1v1ro1gobefcqhj19l][info][application] $_GET = [
+    'r' => 'mail/mail/get-new-message-count-json'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=8vbhlkd0tlll9tku86vstvu3ic'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '62751'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mail%2Fmail%2Fget-new-message-count-json'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=mail%2Fmail%2Fget-new-message-count-json'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520889361.163
+    'REQUEST_TIME' => 1520889361
+]
+2018-03-13 02:46:42 [::1][1][8qhtof51kgg1j2ohgf8a6kc6d3][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php:843
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-13 02:46:09 [::1][1][8qhtof51kgg1j2ohgf8a6kc6d3][info][application] $_GET = [
+    'r' => 'live/poll'
+    'last' => '1520864308'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=8vbhlkd0tlll9tku86vstvu3ic'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '62752'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=live%2Fpoll&last=1520864308'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=live%2Fpoll&last=1520864308'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520889361.164
+    'REQUEST_TIME' => 1520889361
+]
+2018-03-13 02:47:11 [::1][1][1lh89ggh1ii6ubbgp1etra4ghq][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\i18n\Formatter.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-13 02:46:55 [::1][1][1lh89ggh1ii6ubbgp1etra4ghq][info][application] $_GET = [
+    'r' => 'mail/mail/get-new-message-count-json'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=8vbhlkd0tlll9tku86vstvu3ic'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '62787'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mail%2Fmail%2Fget-new-message-count-json'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=mail%2Fmail%2Fget-new-message-count-json'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520889391.721
+    'REQUEST_TIME' => 1520889391
+]
+2018-03-13 15:16:15 [::1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\BaseYii.php:285
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-13 15:15:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'live/poll'
+    'last' => '1520891472'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=1lh89ggh1ii6ubbgp1etra4ghq'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '49265'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=live%2Fpoll&last=1520891472'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=live%2Fpoll&last=1520891472'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520934339.43
+    'REQUEST_TIME' => 1520934339
+]
+2018-03-13 15:16:15 [::1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\like\config.php:10
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-13 15:15:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'mail/mail/get-new-message-count-json'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=1lh89ggh1ii6ubbgp1etra4ghq'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '49266'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mail%2Fmail%2Fget-new-message-count-json'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=mail%2Fmail%2Fget-new-message-count-json'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520934339.43
+    'REQUEST_TIME' => 1520934339
+]
+2018-03-13 18:05:38 [::1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\content\components\ContentContainerActiveRecord.php:36
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-13 18:05:13 [::1][-][-][info][application] $_GET = [
+    'r' => 'mail/mail/get-new-message-count-json'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=4hg90md1fu7f681m44tpqsgqk7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '53031'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mail%2Fmail%2Fget-new-message-count-json'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=mail%2Fmail%2Fget-new-message-count-json'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520944506.733
+    'REQUEST_TIME' => 1520944506
+]
+2018-03-13 18:05:39 [::1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\comment\config.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-13 18:05:14 [::1][-][-][info][application] $_GET = [
+    'r' => 'live/poll'
+    'last' => '1520942611'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=4hg90md1fu7f681m44tpqsgqk7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '53032'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=live%2Fpoll&last=1520942611'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=live%2Fpoll&last=1520942611'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1520944506.733
+    'REQUEST_TIME' => 1520944506
+]
+2018-03-14 11:01:34 [::1][1][4mlhsc7qrac5ur7gk0klvcgj4v][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php:843
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-14 11:01:00 [::1][1][4mlhsc7qrac5ur7gk0klvcgj4v][info][application] $_GET = [
+    'r' => 'mail/mail/get-new-message-count-json'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=9rb2dmvi99dav28a0esh7semqj'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '61139'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mail%2Fmail%2Fget-new-message-count-json'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=mail%2Fmail%2Fget-new-message-count-json'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1521005459.56
+    'REQUEST_TIME' => 1521005459
+]
+2018-03-14 17:05:22 [::1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\BaseYii.php:285
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-14 17:04:55 [::1][-][-][info][application] $_GET = [
+    'r' => 'live/poll'
+    'last' => '1521027245'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=9eio22rha1ptrh8hkltdao2a5c'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '50278'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=live%2Fpoll&last=1521027245'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=live%2Fpoll&last=1521027245'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1521027291.455
+    'REQUEST_TIME' => 1521027291
+]
+2018-03-14 17:05:31 [::1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\humhub\modules\content\components\ContentAddonActiveRecord.php:32
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-14 17:05:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'mail/mail/get-new-message-count-json'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'D6P7cX-N2kx9Wh5zbMpH0GoTIYfnS-WrPqmiq-SYzvVuMFaRWHT8Q86o91FLKjc0PbLm5uxPbCkrHenWZKQIUQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:90/Humhub-Polyglot/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=9eio22rha1ptrh8hkltdao2a5c'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '50366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mail%2Fmail%2Fget-new-message-count-json'
+    'REQUEST_URI' => '/Humhub-Polyglot/index.php?r=mail%2Fmail%2Fget-new-message-count-json'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1521027300.609
+    'REQUEST_TIME' => 1521027300
+]
