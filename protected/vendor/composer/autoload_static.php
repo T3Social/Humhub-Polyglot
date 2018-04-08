@@ -145,6 +145,10 @@ class ComposerStaticInit46f212e9b35d737ec8c2c1ad082b3b35
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-jui',
         ),
+        'yii\\mongodb\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-mongodb',
+        ),
         'yii\\imagine\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-imagine',

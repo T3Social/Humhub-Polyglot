@@ -9,7 +9,7 @@
 namespace humhub\models;
 
 use Yii;
-use yii\db\ActiveRecord;
+use yii\mongodb\ActiveRecord;
 use yii\base\Exception;
 
 /**
@@ -26,9 +26,9 @@ class Setting extends ActiveRecord
     /**
      * @inheritdoc
      */
-    public static function tableName()
+    public static function CollectionName()
     {
-        return 'setting';
+        return ['humhub','setting'];
     }
 
     /**
