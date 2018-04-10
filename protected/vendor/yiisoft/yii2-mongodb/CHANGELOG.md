@@ -1,37 +1,6 @@
 Yii Framework 2 mongodb extension Change Log
 ============================================
 
-2.1.8 under development
------------------------
-
-- no changes in this release.
-
-
-2.1.7 March 30, 2018
---------------------
-
-- Bug #251: Fixed `yii\mongodb\ActiveQuery::indexBy()` does not apply while using Yii 2.0.14 (klimov-paul)
-- Enh: `yii\mongodb\Session` now relies on error handler to display errors (samdark)
-
-
-2.1.6 February 13, 2018
------------------------
-
-- Bug #241: Fixed `yii\mongodb\Command::aggregate()` without 'cursor' option produces error on MongoDB Server 3.6 (Lisio, klimov-paul)
-- Bug #247: Fixed `yii\mongodb\Collection::dropIndex()` unable to drop index specified with sort via index plugin (klimov-paul)
-
-
-2.1.5 November 03, 2017
------------------------
-
-- Bug #223: Usage of deprecated `yii\base\Object` changed to `yii\base\BaseObject` allowing compatibility with PHP 7.2 (klimov-paul)
-- Bug #227: Fixed `yii\mongodb\file\Collection::remove()` does not removes all file chunks in case `limit` is specified (klimov-paul)
-- Bug #228: Fixed `yii\mongodb\Command::aggregate()` does not support 'cursor' option (klimov-paul)
-- Enh #224: Provided support for 'migrate/fresh' command to truncate database and apply migrations again (klimov-paul)
-- Enh #225: Added `yii\mongodb\Migration::$compact` supporting `yii\console\controllers\BaseMigrateController::$compact` option (klimov-paul)
-- Chg #158: Data structure for `yii\mongodb\i18n\MongoDbMessageSource` changed avoiding usage message key as BSON key (klimov-paul)
-
-
 2.1.4 June 23, 2017
 -------------------
 

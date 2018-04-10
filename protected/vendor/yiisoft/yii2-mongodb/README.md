@@ -1,12 +1,7 @@
-<p align="center">
-    <a href="https://www.mongodb.com/" target="_blank" rel="external">
-        <img src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" height="80px">
-    </a>
-    <h1 align="center">MongoDB Extension for Yii 2</h1>
-    <br>
-</p>
+MongoDB Extension for Yii 2
+===========================
 
-This extension provides the [MongoDB](https://www.mongodb.com/) integration for the [Yii framework 2.0](http://www.yiiframework.com).
+This extension provides the [MongoDB](http://www.mongodb.org/) integration for the [Yii framework 2.0](http://www.yiiframework.com).
 
 For license information check the [LICENSE](LICENSE.md)-file.
 
@@ -51,11 +46,7 @@ return [
     'components' => [
         'mongodb' => [
             'class' => '\yii\mongodb\Connection',
-            'dsn' => 'mongodb://@localhost:27017/mydatabase',
-            'options' => [
-                "username" => "Username",
-                "password" => "Password"
-            ]
+            'dsn' => 'mongodb://developer:password@localhost:27017/mydatabase',
         ],
     ],
 ];

@@ -2096,3 +2096,52 @@ Stack trace:
     'REQUEST_TIME_FLOAT' => 1522442373.075
     'REQUEST_TIME' => 1522442373
 ]
+2018-04-09 23:57:24 [::1][1][086uil0uqfvb79td96audvfo4i][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Humhub-Polyglot\protected\vendor\yiisoft\yii2\db\Command.php:843
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-04-09 23:56:57 [::1][1][086uil0uqfvb79td96audvfo4i][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:90'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _csrf=6d68d828f3a3c493cd6986898f0110ce4e2cb502bc441af52ef74b7a2c6e7261a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22a%93%AD%E0%27%F9%26%0F%B3%F2%E9%22%27%E0p%E4W%A1%C7a%0B%04%89%82%15%B4K%7D%80%3C%C6%A4%22%3B%7D; _identity=2e6131dd4867b69af31c680a4e92991c52634fdee8c4b4196a169edc09e9e25aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%2217536442-2b1d-4abd-bcb2-bd67f0f579a6%22%2C2592000%5D%22%3B%7D; PHPSESSID=086uil0uqfvb79td96audvfo4i'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\AMD APP\\bin\\x86_64;c:\\Program Files (x86)\\AMD APP\\bin\\x86;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;E:\\Program Files\\Brackets\\command;C:\\Users\\Harshul Singhal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Harshul Singhal\\AppData\\Roaming\\npm;C:\\Users\\Harshul Singhal\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 90</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '90'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Humhub-Polyglot/index.php'
+    'REMOTE_PORT' => '59422'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Humhub-Polyglot/'
+    'SCRIPT_NAME' => '/Humhub-Polyglot/index.php'
+    'PHP_SELF' => '/Humhub-Polyglot/index.php'
+    'REQUEST_TIME_FLOAT' => 1523298412.465
+    'REQUEST_TIME' => 1523298412
+]

@@ -26,9 +26,9 @@ class Setting extends ActiveRecord
     /**
      * @inheritdoc
      */
-    public static function CollectionName()
+    public static function  CollectionName()
     {
-        return ['humhub','setting'];
+        return 'setting';
     }
 
     /**
